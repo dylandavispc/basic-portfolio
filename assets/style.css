@@ -1,66 +1,188 @@
 header {
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+    height: 78px;
+    background: #ffffff;
+    border: 0px 0px 4px 0px;
+    border-bottom: 2px solid #cccccc;
+    top: 0;
+}
 
+.headerbox {
+    margin: auto;
+    width: 960px;
+    position: relative;
 }
 
 .name-tag {
-
+    height: 80 px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 0px 20px;
+    border: 0px 0px 2px 0px;
+    margin: 0;
 }
 
-.about {
-
+a {
+    text-decoration: none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
 
-.portfolio {
-
+a:hover {
+    color: #4aaaa5;
 }
 
-.contact {
-
+nav {
+    top: 30px;
+    right: 0px;
+    position: absolute;
+    color: #777777;
 }
-
 
 
 
 footer {
-
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 8px solid #4aaaa5;
+    background: #666666;
 }
 
 .copyright {
-
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    color: #cccccc;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 5px;
 }
 
 
 
 
 body {
-
+    background-image: url(../images/background.png);
 }
 
 section {
-
+    margin: 40px;
+    overflow: auto;
+    margin: auto;
+    width: 960px;
+    position: relative;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
 }
 
 .pageName {
-
+    margin: 20px 20px;
+    color:  #4aaaa5;
 }
 
+hr {
+    margin: 0px 20px;
+    background: #777777;
+}
 
+.flexer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
 
+img {
+    object-fit: cover;
+    width: 282px;
+    height: 170px;
+    background: #666666;
+}
+
+.directory:hover {
+    opacity: .6;
+}
 
 .imgProfile {
+    flex: 1;
+    height: 240px;
+}
 
+.textbox1 {
+    position: relative;
+    top: -7px;
+    flex: 2;
+    width: 643px;
+}
+
+.textbox2 {
+    margin: 0;
 }
 
 .textAbout {
+    /* flex: 2; */
+    /* width: 643 px; */
+    margin: 0px 0px 0px 10px;
+    line-height: 30px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 18px
+}
 
+.textAbout2 {
+    /* margin: 10px 0px 0px 10px; */
+    line-height: 30px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 18px
 }
 
 
 
 
-.contact-container {
 
-}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    color: #777777;
+    }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #f3008e;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+  }
+
 
 .contact-input {
 
@@ -74,10 +196,21 @@ section {
 
 
 .directory {
-
+    position: relative;
+    margin: 15px;
 }
 
 .directoryText {
-
+    position: absolute;
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    padding: 15px;
+    margin: 5px 0px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 24px;
 }
 

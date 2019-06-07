@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="images">
     <title>Contact</title>
@@ -13,20 +14,14 @@
 
 <body>
     <header>
-        <div>
+        <div class="headerbox">
             <figure class="name-tag"><h1>Dylan Davis</h1></figure>
 
-            <figure class="about">
-                <a href="C:\Users\PC\code\basic-portfolio\index.html">About</a>
-            </figure>
-            
-            <figure class="portfolio">
-                <a href="C:\Users\PC\code\basic-portfolio\portfolio.html">Portfolio</a>
-            </figure>
-
-            <figure class="contact">
-                <a href="C:\Users\PC\code\basic-portfolio\contact.html">Contact</a>
-            </figure>
+            <nav>
+                <a href="index.html">About</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
     </header>
 
@@ -35,22 +30,26 @@
 
         <hr>
 
-        <form class="contact-container">
-            <label>Full Name</label>
-            <input class="contact-input" type="text">
+        <div class="container">
+            <form action="action_page.php">
+            
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            
+                <label for="email">E-Mail</label>
+                <input type="text" id="email" name="email" placeholder="blah-blah@bullshit.com">
 
-            <label>E-Mail</label>
-            <input class="contact-input" type="text">
-
-            <label>Message</label>
-            <input class="contact-message" type="text">
-
-            <input type="submit" value="Submit">
-        </form>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="This website sucks..." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+            </form>
+        </div>
     </section>
 
     <footer>
-        <div class="copyright">copyright © NostoSounds.LLC</div>
+        <div class="copyright">Copyright © NostoSounds.LLC</div>
     </footer>
 </body>
 
